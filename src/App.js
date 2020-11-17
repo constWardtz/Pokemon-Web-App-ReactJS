@@ -24,7 +24,6 @@ const App = () => {
     setPokemon(result.data)
     setImageLink(result.data.sprites.back_default)
   }
-
  
   const handleOnChange = e => {
     const { value } = e.target
