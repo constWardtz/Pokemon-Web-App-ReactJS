@@ -1,0 +1,9 @@
+.App {
+    height: 100vh;
+    background: rgb(23, 30, 54);
+    /* Layout */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
