@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
-import cors from 'cors'
+import cors from 'cors';
 
 /* Components */ 
 import Form from './components/Form'
