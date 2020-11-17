@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
+import cors from 'cors'
 
 /* Components */ 
 import Form from './components/Form'
@@ -10,7 +11,7 @@ import './styles/App.css'
 const App = () => {
   const [pokemon, setPokemon] = useState([])
   const [pokemonValue, setPokemonValue] = useState('')
-  const [query, setQuery] = useState('charmander')
+  const [query, setQuery] = useState('pikachu')
   const [imageLink, setImageLink] = useState('')
 
   useEffect(() => {
@@ -18,7 +19,7 @@ const App = () => {
   }, [query])
   
   const catchPokemon  = async () => {
-    const result = await axios.get(`https://pokeapi.co/api/v2/pokemon/${query.toLowerCase().trim()}`)
+    const result = await axios.get(`${cors}https://pokeapi.co/api/v2/pokemon/${query.toLowerCase().trim()}`)
     
     console.log("result: ", result.data)
     setPokemon(result.data)

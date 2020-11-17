@@ -1,3 +1,5 @@
+import '../styles/PokemonDetails.css'
+
 const PokemonDetails = props => {
     const {
         species,

@@ -1,0 +1,11 @@
+.PokemonDetails {
+    width: auto;
+}
+
+.PokemonDetails .img img {
+    width: 100%;
+}
+
+.PokemonDetails .info p {
+    font-size: 1.5rem;
+}
